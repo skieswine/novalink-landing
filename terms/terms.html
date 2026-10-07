@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="mytheme">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NovaLink – Partner Network</title>
+    <link rel="stylesheet" href="../output.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap"
+      rel="stylesheet" />
+    <!-- Tailwind CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.3/dist/tailwind.min.css"
+      rel="stylesheet" />
+
+    <!-- У head -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <script>
+      window.__theme = "mytheme";
+    </script>
+    <!-- Моя власна тема з кастомниними кольорами -->
+
+    <style>
+      html {
+        color-scheme: light !important;
+      }
+      html,
+      body {
+        font-family: "Play", sans-serif;
+      }
+
+      .font-play-bold {
+        font-family: "Play", sans-serif;
+        font-weight: 700;
+      }
+
+      .font-orbitron {
+        font-family: "Orbitron", sans-serif;
+      }
+
+      .font-orbitron-bold {
+        font-family: "Orbitron", sans-serif;
+        font-weight: 700;
+      }
+    </style>
+  </head>
+
+  <body class="overflow-x-hidden bg-[#0F0F0F]">
+    <header id="top" class="relative z-50">
+      <div
+        class="px-4 lg:px-[130px] py-6 flex items-center justify-between bg-[#292929]/10 backdrop-blur-sm backdrop-saturate-150">
+        <!-- Logo -->
+        <div class="flex items-center gap-3">
+          <a href="../"
+            ><img src="../images/Logo.png" alt="Logo" class="h-[30px]" />
+          </a>
+          <h1 class="text-[24px] font-normal font-orbitron text-[#0AB8B6]">
+            Nova<span class="text-[#0AB8B6]">Link</span>
+          </h1>
+        </div>
+
+        <!-- Desktop Menu -->
+        <nav
+          class="hidden lg:flex gap-[45px] font-orbitron text-[15px] font-medium text-[#0AB8B6]">
+          <a href="../#affiliates" class="hover:text-[#0BE4E2]">Affiliates</a>
+          <a href="../#advertisers" class="hover:text-[#0BE4E2]">Advertisers</a>
+          <a href="../#bonus" class="hover:text-[#0BE4E2]">Bonus</a>
+          <a href="../#partners" class="hover:text-[#0BE4E2]">Partners</a>
+          <a href="../#news" class="hover:text-[#0BE4E2]">News</a>
+          <a href="../#contacts" class="hover:text-[#0BE4E2]">Contact us</a>
+        </nav>
+
+        <!-- Mobile Burger -->
+        <button
+          id="menu-toggle"
+          class="pr-2 lg:hidden focus:outline-none z-50 relative">
+          <svg
+            class="w-6 h-6 text-[#0AB8B6]"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Menu Overlay -->
+      <div
+        id="mobile-menu"
+        class="fixed inset-0 bg-[#0F0F0F]/80 backdrop-blur-[5px] z-40 hidden flex-col items-center justify-center px-5 text-center text-[#0AB8B6] font-orbitron text-[24px] font-medium space-y-[45px] backdrop-blur-sm">
+        <!-- Top Logo + Close -->
+        <div class="absolute top-6 left-6 flex items-center gap-3">
+          <a href="../"
+            ><img src="../images/Logo.png" alt="Logo" class="h-[30px]" /> /></a
+          >
+
+          <h1 class="text-[24px] font-normal font-orbitron text-[#0AB8B6]">
+            Nova<span class="text-[#0AB8B6]">Link</span>
+          </h1>
+        </div>
+
+        <button
+          id="menu-close"
+          class="absolute top-6 right-6 text-[#0AB8B6] focus:outline-none">
+          <svg
+            class="w-8 h-8"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+
+        <!-- Links -->
+        <a href="../#affiliates" class="hover:text-[#0BE4E2] transition-colors"
+          >Affiliates</a
+        >
+        <a href="../#advertisers" class="hover:text-[#0BE4E2] transition-colors"
+          >Advertisers</a
+        >
+        <a href="../#bonus" class="hover:text-[#0BE4E2] transition-colors"
+          >Bonus</a
+        >
+        <a href="../#partners" class="hover:text-[#0BE4E2] transition-colors"
+          >Partners</a
+        >
+        <a href="../#news" class="hover:text-[#0BE4E2] transition-colors"
+          >News</a
+        >
+        <a href="../#contacts" class="hover:text-[#0BE4E2] transition-colors"
+          >Contact us</a
+        >
+      </div>
+    </header>
+    <main>
+      <!-- Секція з фон-зображенням -->
+
+      <section
+        class="relative w-full min-h-screen bg-[#121212] overflow-hidden text-white font-play px-4 pt-6 pb-10">
+        <!-- Rotating background -->
+
+        <img
+          src="../images/BlurBack.png"
+          alt="blurred bg"
+          class="absolute top-[-55%] lg:top-[-30%] left-1/2 -translate-x-1/2 max-w-[2000px] max-w-none z-0 animate-spin-slowest" />
+        <div class="relative z-20 left-[5%] top-[5%] mx-auto">
+          <a
+            href="../"
+            class="flex items-center gap-2 text-[#0AB8B6] text-[20px] pb-[30px] font-orbitron hover:text-[#0BE4E2]">
+            <!-- SVG стрілка вліво -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-[16px] h-[16px]"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#0AB8B6"
+              stroke-width="2">
+              <path
+                d="M15 18l-6-6 6-6"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+            Back
+          </a>
+        </div>
+        <section class="text-white py-16 px-4 lg:px-20 font-play">
+          <div class="max-w-4xl mx-auto">
+            <h2
+              class="text-[32px] font-orbitron font-bold text-center text-[#0AB8B6] mb-8">
+              Terms and Conditions
+            </h2>
+
+            <div class="space-y-6 text-[16px] leading-[1.8] text-white/80">
+              <p>
+                Welcome to NovaLink! By using our website, you agree to the
+                terms listed below. We’ve written them in plain English — no
+                legal jargon, just what matters.
+              </p>
+
+              <h3 class="text-white text-[20px] font-bold mt-8">
+                1. Using the Website
+              </h3>
+              <p>
+                Feel free to browse, read, and share what you find here. Just
+                don’t copy or reuse our content for commercial purposes without
+                permission — we’ve worked hard on it!
+              </p>
+
+              <h3 class="text-white text-[20px] font-bold mt-8">
+                2. Your Privacy
+              </h3>
+              <p>
+                We respect your privacy. We don’t collect any personal
+                information without your knowledge. Some cookies may be used to
+                make your experience smoother — nothing sneaky.
+              </p>
+
+              <h3 class="text-white text-[20px] font-bold mt-8">
+                3. Content Accuracy
+              </h3>
+              <p>
+                We do our best to keep all content accurate and up to date.
+                Still, we're human — if you notice any errors, let us know and
+                we’ll fix them as soon as possible.
+              </p>
+
+              <h3 class="text-white text-[20px] font-bold mt-8">
+                4. Community Guidelines
+              </h3>
+              <p>
+                If you interact with us (comments, messages, etc.), keep it
+                respectful. We reserve the right to remove any content that
+                violates basic decency or ethics.
+              </p>
+
+              <h3 class="text-white text-[20px] font-bold mt-8">5. Updates</h3>
+              <p>
+                We might update these terms from time to time. We’ll do our best
+                to keep you informed, but feel free to check this page
+                occasionally for any changes.
+              </p>
+
+              <p class="text-white/60 italic">
+                Thanks for being here. We’re building NovaLink for people like
+                you — and we truly appreciate your trust. 🚀
+              </p>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <style>
+        @keyframes spin-slowest {
+          from {
+            transform: rotate(0deg);
+          }
+          to {
+            transform: rotate(360deg);
+          }
+        }
+
+        .animate-spin-slowest {
+          animation-name: spin-slowest;
+          animation-duration: 120s; /* дуже повільно */
+          animation-iteration-count: infinite;
+          animation-timing-function: linear;
+        }
+      </style>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- ✅ Скрипт -->
+
+    <script>
+      const toggleBtn = document.getElementById("menu-toggle");
+      const closeBtn = document.getElementById("menu-close");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const marqueeWrap = document.getElementById("marquee-wrap"); // 🎯 додаємо
+
+      toggleBtn.addEventListener("click", () => {
+        mobileMenu.classList.remove("hidden");
+        mobileMenu.classList.add("flex");
+
+        toggleBtn.classList.add("hidden");
+        closeBtn.classList.remove("hidden");
+
+        document.body.classList.add("overflow-hidden");
+      });
+
+      closeBtn.addEventListener("click", () => {
+        mobileMenu.classList.add("hidden");
+        mobileMenu.classList.remove("flex");
+
+        toggleBtn.classList.remove("hidden");
+        closeBtn.classList.add("hidden");
+
+        document.body.classList.remove("overflow-hidden");
+      });
+    </script>
+    <script>
+      (function () {
+        const HEADER_OFFSET = 0;
+
+        document.addEventListener("click", function (e) {
+          const trigger = e.target.closest("[data-scroll-to]");
+          if (!trigger) return;
+          e.preventDefault();
+
+          const id = trigger.dataset.scrollTo;
+          const target = document.getElementById(id);
+          if (!target) return;
+
+          const y =
+            target.getBoundingClientRect().top +
+            window.pageYOffset -
+            HEADER_OFFSET;
+
+          window.scrollTo({ top: y, behavior: "smooth" });
+        });
+      })();
+    </script>
+  </body>
+</html>

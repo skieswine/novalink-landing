@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@plugin "daisyui" {
+  themes: mytheme --default;
+}
+
+@plugin "daisyui/theme" {
+  name: "mytheme";
+  default: true;
+  prefersdark: false;
+  color-scheme: light;
+
+  --color-base-100: #ffffff;
+  --color-base-content: #ffffff;
+  --color-primary: #0AB8B6;
+  --color-primary-content: #ffffff;
+  --color-secondary: #0BE4E2;
+  --color-secondary-content: #ffffff;
+}
+
+/* Partner wordmarks (fictional demo brands) */
+.partner-mark{font-family:"Orbitron",sans-serif;font-size:26px;letter-spacing:.2em;color:rgba(255,255,255,.7);transition:color .3s,filter .3s}
+.group:hover .partner-mark{color:#0AB8B6;filter:drop-shadow(0 0 8px #0AB8B6)}
